@@ -25,3 +25,6 @@ The realtime identification by default uses the default webcam of the computer (
 
 # Getting Started With Training
 TBD
+
+# Credit
+Thanks to Thorston Ball and Harriosn Kinsley for their Haar Training walkthroughs and scripts. 
