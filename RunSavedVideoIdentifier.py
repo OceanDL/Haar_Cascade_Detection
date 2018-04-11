@@ -1,11 +1,12 @@
 import numpy as np
 import cv2
-
+import sys
 
 # Cascade file to use, change name to whatever you called it.
 cascade = cv2.CascadeClassifier('cascade.xml')
 
-cap = cv2.VideoCapture('grenade2.mp4')
+cap = cv2.VideoCapture(sys.argv[1])
+
 
 while 1:
     ret, img = cap.read()
