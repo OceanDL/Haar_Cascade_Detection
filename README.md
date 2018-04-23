@@ -24,7 +24,11 @@ To utilize these scripts, CD to the cloned directory and execute the python scri
 The realtime identification by default uses the default webcam of the computer (whatever that device may be). 
 
 # Getting Started With Training
-TBD
+Training only requires one dependecy(OpenCV) which can be fetched with the following command:
+```sh
+$  sudo apt-get install libopencv-dev
+```
+
 
 # Credit
 Thanks to Thorston Ball and Harriosn Kinsley for their Haar Training walkthroughs and scripts. 
