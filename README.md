@@ -58,7 +58,7 @@ $  opencv_traincascade -data classifier -vec output.vec -bg negatives.txt\
 ```
 
 The arguments can be looked at more closely here: 
-https://docs.opencv.org/2.4/doc/user_guide/ug_traincascade.html#positive-samples
+https://docs.opencv.org/2.4/doc/user_guide/ug_traincascade.html#cascade-training
 
 
 And that's it, once training has been completed a cascade.xml file will be generated in the classifier folder to be used for identification. 
