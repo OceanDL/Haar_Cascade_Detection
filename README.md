@@ -32,7 +32,7 @@ From here, you will need to gather positive and negative images for your dataset
 
 Once you have gathered the image dataset, you put them into the two respective folders, positive_images and negative_images(while deleting the current positive images if training a different object).
 
-Then from there you will create two .txt files that will be used for atrifically creating samples to be used while training. These two commands are:
+Then from there you will create two .txt files that will be used for artificially creating samples to be used while training. These two commands are:
 ```sh
 $  find ./positive_images -iname "*.jpg" > positives.txt
 $  find ./negative_images -iname "*.jpg" > negatives.txt
@@ -41,7 +41,7 @@ Now we will create the samples to be utilized during training, we will be using 
 ```sh
 $  perl bin/createsamples.pl positives.txt negatives.txt samples 1500\
   "opencv_createsamples -bgcolor 0 -bgthresh 0 -maxxangle 1.1\
-  -maxyangle 1.1 maxzangle 0.5 -maxidev 40 -w 80 -h 40"
+  -maxyangle 1.1 maxzangle 0.5 -maxidev 40 -w 80 -h 80"
  ```
 
 Now that the samples have been created and placed in the samples folder, we must combine them into a single .vec file to be used in training:
